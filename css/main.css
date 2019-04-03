@@ -1,0 +1,1087 @@
+html {
+    /* font-size: 10px; */
+}
+
+body {
+    /* font-family: 'Playfair Display SC', serif; */
+    font-family: 'Spectral SC', serif;
+    background: black;
+}
+
+#wrapper {
+    margin: 0 auto;
+    max-width: 1920px;
+    margin-top: 180px;
+}
+
+/* HEADER */
+
+.header {
+    overflow: auto;
+    background-color: #000;
+    text-align: center;
+    padding-bottom: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+.header__first-div img {
+    width: 75px;
+}
+
+.header__nav {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.header__nav ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 50px;
+}
+
+.header__nav ul li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.header__nav-current {
+    border-bottom: 1px solid #fff;
+}
+
+a:link, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* HEADER-END */
+
+
+/* ----------------------------------------PRIMERA PAG---------------------------------------- */
+
+/* MAIN */
+
+.section-1 {
+    background: url("../img/main-page-img.jpg") no-repeat;
+    background-size: cover;
+    background-position: 65%;
+}
+
+.section-1__content {
+    color: #fff;
+    width: 37%;
+    display: inline-block;
+    text-align: center;
+    margin: 5% 6% 35% 3%;
+    line-height: 150%;
+    animation-name: moveInTop;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+
+}
+
+.section-1__content h3 {
+    font-size: 2.2rem;
+    color: #8E891B;
+    line-height: 110%;
+}
+
+.section-1__content p {
+    margin-top: 15px;
+    font-family: 'Spectral SC', serif; 
+}
+
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(600px);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-2 {
+    padding-top: 4%;
+    background-color: #000;
+}
+
+
+.section-2__content {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-2__content h3 {
+    font-size: 32px;
+    color: #fff;
+    display: inline-block;
+}
+
+.section-2__content .container {
+    margin: 5% auto;
+    max-width: 1920px;
+    min-height: 800px;
+}
+
+.section-2__content ul {
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    min-height: 800px;
+    /* width: 250px;
+    margin: 0 auto; */
+}
+
+.section-2__content ul li {
+    padding: 40px 0;
+    font-size: 30px;
+}
+
+.section-2__content ul li:first-child {
+    margin-top: 6%;
+}
+
+.section-2__content li a {
+    padding: 8px;
+}
+
+.section-2__content li a:hover {
+    border: 3px solid #afafaf;
+    background-color: #000;
+    color: #fff;
+}
+
+ .section-2__content ul li .img {
+    position: absolute;
+    width: calc(1920px/2 - 774px/2);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+    opacity: 0;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+ .section-2__content ul li .img--1 {
+    background: url("../img/chiron-left-side.jpg") no-repeat;
+    top: 0;
+    bottom: 0;
+    right: 58%;
+}
+
+.section-2__content ul li .img--2 {
+    background: url("../img/chiron-right-side.jpg") no-repeat;
+    top: 0;
+    bottom: 0;
+    left: 58%;
+}
+
+.section-2__content ul li .img--3 {
+    background: url("../img/ferrari-left-side-1.jpg") no-repeat;
+    top: 0;
+    bottom: 0;
+    right: 58%;
+}
+
+.section-2__content ul li .img--4 {
+    background: url("../img/ferrari-right-side-2.jpg") no-repeat;
+    top: 0;
+    bottom: 0;
+    left: 58%;
+}
+
+.section-2__content ul li .img--5 {
+    background: url("../img/aventador-left-side.jpg") no-repeat;
+    top: 0;
+    bottom: 0;
+    right: 58%;
+}
+
+.section-2__content ul li .img--6 {
+    background: url("../img/aventador-right-side.jpg") no-repeat;
+    top: 0;
+    bottom: 0;
+    left: 58%;
+}
+
+.section-2__content ul li .img--7 {
+    background: url("../img/aston-left-side.jpg") no-repeat;
+    top: 0;
+    bottom: 0;
+    right: 58%;
+}
+
+.section-2__content ul li .img--8 {
+    background: url("../img/aston-right-side.jpg") no-repeat;
+    top: 0;
+    bottom: 0;
+    left: 58%;
+}
+
+.bugatti:hover > .img--1, .bugatti:hover > .img--2 {
+    opacity: 1;
+    z-index: 100;
+}
+
+.ferrari:hover > .img--3, .ferrari:hover > .img--4 {
+    opacity: 1;
+    z-index: 200;
+}
+
+.lamborghini:hover > .img--5, .lamborghini:hover > .img--6 {
+    opacity: 1;
+    z-index: 400;
+}
+
+.aston:hover > .img--7, .aston:hover > .img--8 {
+    opacity: 1;
+    z-index: 500;
+}
+
+/* ----------------------------------------POPUP---------------------------------------- */
+
+.popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.popup__content {
+    width: 75%;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(.5);
+    transition: all .4s .2s;
+}
+
+.popup__left {
+    width: 22%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.popup__center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -3%;
+}
+
+.popup__center h4 {
+    margin: 4%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.popup__center p {
+    line-height: 150%;
+    text-align: justify;
+}
+
+.popup__center p:nth-child(3) {
+    margin-top: 2%;
+}
+
+.popup__right {
+    width: 22%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.popup img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);  
+}
+
+.popup__close:link, .popup__close:visited {
+    color: #000;
+    position: absolute;
+    top: 0;
+    right: 2%;
+    font-size: 50px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .2s;
+}
+
+.popup__close:hover {
+    color: #7a0000;
+    transform: scale(1.6);
+}
+
+/* ----------------------------------------POPUP---------------------------------------- */
+
+
+
+/* ----------------------------------------PRIMERA PAG---------------------------------------- */
+
+
+
+/* ----------------------------------------SEGONA PAG---------------------------------------- */
+
+.section-3__content .container {
+    margin: 5% auto;
+    width: 80%;
+    overflow: auto;
+    padding: 16px;
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.section-3__content .brand-model {
+    display: inline-block;
+    float: left;
+    width: 70%;
+}
+
+.section-3__content .brand-model img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.section-3__content .brand-content {
+    float: right;
+    width: 25%;
+    color: #fff;
+}
+
+.section-3__content .brand-content h3 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.section-3__content .brand-content ul {
+    margin: 7% auto 5% auto;
+    display: inline-block;
+}
+
+.section-3__content .brand-content li {
+    padding: 20px;
+}
+
+.section-3__content .brand-content li:last-child {
+    margin-left: 20%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.section-3__content .brand-content li img {
+    vertical-align: middle;
+    padding: 8px;
+    width: 50px;
+}
+
+.section-3__content .btn, .btn {
+    padding: 20px;
+    display: block;
+    background: rgb(175, 0, 0);
+    cursor: pointer;
+    color: #fff;
+    border-radius: 100px;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out; 
+}
+
+.btn:hover {
+    transform: translateY(-3px) scale(1.1);
+} 
+
+
+/* ----------------------------------------SEGONA PAG---------------------------------------- */
+
+/* ----------------------------------------TERCERA PAG---------------------------------------- */
+
+.section-4__content .container {
+    width: 80%;
+    margin: 3% auto;
+    color: #fff;
+    line-height: 150%;
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.section-4__content .container__icon {
+    display: none;
+    text-align: center;
+}
+
+.section-4__content .container__icon img {
+    width: 75px;
+    display: block;
+}
+
+.section-4__content h3, .section-5__content h3  {
+    font-size: 1.8rem;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.section-4__content p {
+    margin-top: 2%;
+}
+
+.section-4__content ul {
+    width: 100%;
+    margin: 2% auto;
+}
+
+.section-4__content ul li {
+    display: inline-block;
+    width: calc(100%/4 - 35px);
+    text-align: center;
+    color: #fff;
+    min-height: 200px;
+    vertical-align: middle;
+    padding: 10px;
+    transition-duration: .3s;
+    transition-timing-function: linear;
+}
+
+.section-4__content ul li img {
+    width: 60px;
+}
+
+.section-4__content ul li h4 {
+    margin: 3% 0;
+    font-size: 1.3rem;
+}
+
+
+.section-4__content ul li:hover, .section-5__content .first-ul li:hover {
+    color: #af0000;
+    transform: translateY(-10px) scale(1.1);
+    cursor: pointer;
+}
+
+.section-4__content--part-2 {
+    width: 75%;
+    margin: 5% auto;
+    text-align: center;
+    transition-duration: .3s;
+    transition-timing-function: linear;
+}
+
+.section-4__content--part-2 .stars {
+    width: 185px;
+}
+
+.section-4__content--part-2:hover {
+    transform: scale(1.05);
+}
+
+.section-4__content--part-2 p:nth-child(odd) {
+    color: #af0000;
+    border-bottom: 2px solid #af0000;
+    padding: 15px;
+}
+
+.section-4__content .textarea {
+    width: 50%;
+	height: 120px;
+	border: 2px solid #af0000;
+    padding: 5px;
+    color: #fff;
+    background-color: #000;
+    display: block;
+    margin: 2% auto;
+}
+
+.section-4__content a {
+    display: block;
+    width: 140px;
+    text-align: center;
+    margin: 1% auto;
+    padding: 10px;
+}
+
+
+/* ----------------------------------------TERCERA PAG---------------------------------------- */
+
+/* ----------------------------------------CUARTA PAG---------------------------------------- */
+
+.section-5__content .container {
+    color: #fff;
+}
+
+#map {
+    width: 80%;
+    height: 500px;
+    border: 5px solid #af0000;
+    border-radius: 10px;
+    margin: 3% auto;
+}
+
+.section-5__content ul {
+    width: 80%;
+    margin: 2% auto;
+}
+
+.section-5__content .first-ul li {
+    width: calc(100%/5 - 5px);
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    transition-duration: .3s;
+    transition-timing-function: linear; 
+}
+
+.section-5__content ul img {
+    width: 45px;
+    margin: 4%;
+}
+
+.section-5__content form ul li {
+    display: inline-block;
+    margin: 1% 0;
+    width: 100%;
+    text-align: center;
+}
+
+.section-5__content form ul li:nth-child(6) {
+    margin-top: 4%;
+}
+
+.section-5__content form .label-box {
+    width: 15%;
+    display: inline-block;
+}
+
+.section-5__content form span {
+    color: #af0000;
+    font-size: 1.3rem;
+}
+
+.section-5__content form input:not(.radio) {
+    padding: 8px;
+    background: #000;
+    color: #fff;
+    border: 2px solid #af0000;
+    margin: 0 5%;
+    width: 20%;
+}
+
+.section-5__content form textarea {
+    width: 75%;
+    height: 200px;
+    padding: 8px;
+    background: #000;
+    color: #fff;
+    border: 2px solid #af0000;
+    margin: 2% 5%;
+}
+
+.section-5__content form h4 {
+    margin-bottom: 2%;
+}
+
+.section-5__content form .radio {
+    vertical-align: middle;
+}
+
+.section-5__content form .final {
+    border-radius: 12px;
+    background: #af0000 !important;
+}
+
+
+/* input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label:before {
+    background-color: white;
+    border: 1px solid #af0000;
+    border-radius: 50%;
+    content:"";
+    display: inline-block;
+    font-size: 26px;
+    height: 12px;
+    width: 12px;
+    line-height: 12px;
+    margin: -2px 6px 0 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+input[type="radio"]:checked + label:before {
+    content:"\2022";
+} */
+/* ----------------------------------------CUARTA PAG---------------------------------------- */
+
+
+/* FOOTER */
+
+.footer {
+    background: linear-gradient(to top , #7a0000, black);
+    font-family: serif;
+    padding-top: 10%;
+    /* margin-top: -15%; */
+}
+
+.footer div {
+    display: inline-block;
+    color: #F85;
+    width: calc(100%/3 - 3px);
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.footer__content--contact {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    transition: all .5s;
+}
+
+.footer__content--contact:hover {
+    display: block;
+    transform: translateY(-3px);
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+
+.footer__content h4 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.fab {
+    font-size: 30px;
+    margin-left: 12px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.fab:hover {
+    color: #fff;
+    transform: scale(1.3);
+}
+
+/* SCROLLBAR PERSONALITZADA                   No supported per firefox, IE and Edge*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: ;
+    background-color: #000;
+}
+ 
+::-webkit-scrollbar-thumb { 
+    background: #7a0000; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(175, 0, 0); ahy
+}
+
+::selection {
+    background: #af0000;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1920px) {
+
+    /* PRIMERA PAG */
+
+    /* SEGONA PAG */
+
+    .section-3__content .brand-content li:last-child {
+        width: 85%;
+        margin-left: 0;
+    }
+
+    /* TERCERA PAG */
+    
+    /* QUARTA PAG */
+}
+
+@media (max-width: 1720px) {
+    /* PRIMERA PAG */
+
+    .section-1__content {
+        width: auto;
+    }
+
+    /* SEGONA PAG */
+
+    .section-3__content .brand-model {
+        width: 62%;
+        margin-top: 6%;
+    }
+
+    .section-3__content .brand-content {
+        width: 35%;
+    }
+
+    .section-3__content .brand-content li:last-child {
+        margin: 0;
+    }
+
+    /* TERCERA PAG */
+    
+    /* QUARTA PAG */
+
+}
+
+@media (max-width: 1420px) {
+
+    /* PRIMERA PAG */
+
+    .section-2__content ul li {
+        font-size: 1.2rem;
+    }
+
+    /* SEGONA PAG */
+
+    .section-3__content .container {
+        margin: 0 auto;
+    }
+
+    .section-3__content .brand-model {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .section-3__content .brand-content {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .section-3__content .brand-content h3 {
+        display: none;
+    }
+
+    .section-3__content .brand-content ul {
+        width: 90%;
+        margin-top: 2%;
+    }
+
+    .section-3__content .brand-content li {
+        display: inline-block;
+        width: 40%;
+    }
+
+    .section-3__content .brand-content li:first-child {
+        text-align: left;
+    }
+
+    .section-3__content .brand-content li:nth-child(2) {
+        text-align: right;
+    }
+
+    .section-3__content .brand-content li:nth-child(3) {
+        text-align: left;
+    }
+
+    .section-3__content .brand-content li:nth-child(4) {
+        text-align: right;
+    }
+
+    /* TERCERA PAG */
+    
+    /* QUARTA PAG */
+}
+
+@media (max-width: 1024px) {
+
+    .header__nav ul li {
+        margin: 0 40px;
+    }
+
+    /* PRIMERA PAG */
+
+    .section-2__content ul li .img {
+        display: none;
+    }
+
+    .section-2__content {
+        margin-top: 50px;
+        height: 800px;
+    }
+
+    /* SEGONA PAG */
+
+    .section-3__content .brand-content li {
+        width: 80%;
+        text-align: center !important;
+    }
+
+    /* TERCERA PAG */
+
+    .section-4__content ul li {
+        width: calc(90%/2);
+    }
+
+    .section-4__content .textarea {
+        width: 95%;
+    }
+
+    .section-4__content a {
+        padding: 10px;
+    }
+
+    /* QUARTA PAG */
+
+    .section-5__content .first-ul li {
+        width: calc(100%/2 - 5px);
+    }
+
+    .section-5__content .first-ul li:last-child {
+        width: 100%;
+    }
+    
+    .section-5__content ul {
+        width: 100%;
+    }
+
+    .section-5__content form .label-box {
+        width: 42%;
+    }
+
+    .section-5__content form input:not(.radio) {
+        width: 35%;
+    }
+
+}
+
+@media (max-width: 973px) {
+
+    /* PRIMERA PAG */
+
+    .popup {
+        display: none;
+    }
+
+    /* SEGONA PAG */
+    
+    /* TERCERA PAG */
+    
+    /* QUARTA PAG */
+}
+
+@media (max-width: 850px) {
+
+    /* PRIMERA PAG */
+
+    /* SEGONA PAG */
+
+    .section-2 {
+        height: auto;
+    }
+
+    .section-2__content {
+        height: auto;
+    }
+
+    .section-2__content .container {
+        height: auto;
+    }
+
+    .section-2__content ul {
+        height: auto;
+    }
+
+    /* TERCERA PAG */
+    
+    /* QUARTA PAG */
+}
+
+@media (max-width: 767px) {
+
+    #wrapper {
+        margin-top: 0;
+    }
+    .header {
+        position: unset;
+        z-index: 10;
+    }
+
+    .header__nav {
+        margin-top: 0;
+    }
+
+    .header__nav ul li {
+        width: calc(100%/2);
+        margin: 10px;
+    }
+
+    /* PRIMERA PAG */
+
+    .section-2__content .container {
+        min-height: 375px;
+    }
+
+    .section-2__content ul {
+        min-height: 375px;
+    }
+
+    /* SEGONA PAG */
+
+    /* TERCERA PAG */
+
+    .section-4__content {
+        text-align: justify;
+    }
+
+    .section-4__content h3 {
+        margin: 20px 0;
+    }
+
+    .section-4__content ul li {
+        width: calc(100% - 15px);
+        margin: 20px 0;
+    }
+
+    .section-4 .container .mobile-delete {
+        display: none;
+    }
+
+    /* QUARTA PAG */
+
+    .section-5__content h3 {
+        margin: 30px 0;
+    }
+
+    .footer {
+        padding-bottom: 5%;
+    }
+
+    .footer div {
+        width: calc(85% - 2px);
+        margin: 35px auto;
+        display: block;
+    }
+}
+
+@media (max-width: 527px) {
+
+    /* PRIMERA PAG */
+
+    /* SEGONA PAG */
+
+    .section-3__content .brand-content li {
+        width: 90%;
+    }    
+
+    /* TERCERA PAG */
+
+    /* QUARTA PAG */
+}
+
+@media (max-width: 474px) {
+    /* PRIMERA PAG */
+
+    /* SEGONA PAG */
+
+    .section-3__content .brand-content li {
+        width: 35%;
+    }
+
+    .section-3__content .brand-content li:last-child {
+        width: 80%;
+        padding: 10px;
+    }
+
+    /* TERCERA PAG */
+
+    .section-5__content .first-ul li {
+        width: calc(100% - 10px);
+    }
+
+    /* QUARTA PAG */
+}
+
+@media (max-width: 388px) {
+
+    /* PRIMERA PAG */
+
+    /* SEGONA PAG */
+
+    .section-3__content .brand-content li:nth-child(3) {
+        width: 60%;
+    }    
+
+    /* TERCERA PAG */
+
+    /* QUARTA PAG */
+}
+

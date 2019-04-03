@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/reset.css">
+        <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display+SC|Spectral+SC">
+        <link rel="stylesheet" href="css/main.css">
+        <title>L&Cars</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header class="header">
+                <div class="header__first-div">
+                    <a href="index.html"><img src="img/luxury-icon-black.jpg" alt="Icon"></a>
+                    <h2>L&Cars</h2>
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="models.html">Our Models</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html" class="header__nav-current">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section class="section-5">
+                    <div class="section-5__content">
+                        <div class="container">
+                            <h3>Where We Are</h3>
+                                <div id="map"></div>
+                                <script>
+                                    function initMap() {
+                                        var location = {lat: 41.384263, lng: 2.144641};
+                                        var map = new google.maps.Map(document.getElementById("map"), {
+                                            zoom: 10,
+                                            center: location
+                                        });
+                                        var marker = new google.maps.Marker({
+                                            position: location,
+                                            map: map
+                                        });
+                                    }
+                                </script>
+                                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeWECXVV_rJlFQIC89TnKovvedMT3VDrQ&callback=initMap"></script>
+
+                                <ul class="first-ul">
+                                    <li>
+                                        <img src="img/signs.png" alt="icon">
+                                        <h4>Adress:</h4>
+                                        <p>Carrer d'Entença, 182<br>08029 Barcelona<br>España</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/technology (3).png" alt="icon">
+                                        <h4>Phone:</h4>
+                                        <p>+34 977 000 000</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/technology (4).png" alt="icon">
+                                        <h4>Fax:</h4>
+                                        <p>06103 000 104</p>
+                                </li>
+                                    <li>
+                                        <img src="img/square.png" alt="icon">
+                                        <h4>Time Schedule:</h4>
+                                        <p>7 days a week<br>8am-8pm</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/social-media.png" alt="icon">
+                                        <h4>Skype:</h4>
+                                        <p>Luxury&Cars</p>
+                                    </li>
+                                </ul>
+
+                                <div class="form">
+                                    <h3>Want to work with us?</h3>
+
+                                    <form action="index.php" method="post">
+                                        <ul>
+                                            <li>
+                                                <div class="label-box"><label for="First">First Name<span> *</span></label></div>
+                                                <input type="text" name="First" placeholder="Name" required>
+                                            </li>
+                                            <li>
+                                                <div class="label-box"><label for="Last">Last Name<span> *</span></label></div>
+                                                <input type="text" name="Last" placeholder="Last Name" required>
+                                            </li>
+                                            <li>
+                                                <div class="label-box"><label for="Mail">E-mail<span> *</span></label></div>
+                                                <input type="email" name="Mail" placeholder="...@gmail" required>
+                                            </li>
+                                            <li>
+                                                <div class="label-box"><label for="Phone">Phone Number<span> *</span></label></div>
+                                                <input type="text" name="Phone" placeholder="+34..." required>
+                                            </li>
+                                            <li>
+                                                <div class="label-box"><label for="Location">Location (City)<span> *</span></label></div>
+                                                <input type="text" name="Location" placeholder="" required>
+                                            </li>
+                                            <li>
+                                                <div class="label-box"><label for="Reason">Reason why you want to work with us</label></div>
+                                                <textarea name="Reason"></textarea>
+                                            </li>
+                                            <li>
+                                                    <h4>Gender</h4>
+                                                    <input type="radio" class="radio" name="radio">
+                                                    <label for="radio">Male</label>
+                                                          
+                                                    <input type="radio" class="radio" name="radio">
+                                                    <label for="radio">Female</label>
+                                            </li>
+                                            <li>
+                                                <div class="label-box"><label for="Date">Birth Date</label></div>
+                                                <input type="date" name="Date">
+                                            </li>
+
+                                            <li>
+                                                <div class="label-box"><label for="File">Resume / CV<span> *</span></label></div>
+                                                <input type="file" name="File" required>
+                                            </li>
+
+                                            <li>
+                                                <input type="submit" class="final" value="SUBMIT">
+                                                <input type="reset" class="final" value="RESET">
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+                
+            <footer class="footer">
+                <div class="footer__first-ul">
+                        <p>&copy; Copyright 2018 | All rights reserved</p>
+                </div>
+
+                <div class="footer__content">
+                    <h4>Our Mission</h4>
+                    <p>Our main purppose is to save you some time by keeping things simple. Why can´t you just have access to rent the best super cars coming the most well known brands in the world?
+                        <br>Here, we make this possible!
+                    </p>
+                </div>
+
+                <div class="footer__social-media">
+                    <p> 
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    
+    </body>
+</html>

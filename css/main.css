@@ -629,6 +629,7 @@ a:link, a:visited {
     background: #000;
     color: #fff;
     border: 2px solid #af0000;
+    outline-color: transparent;
     margin: 0 5%;
     width: 20%;
 }
@@ -638,6 +639,7 @@ a:link, a:visited {
     height: 200px;
     padding: 8px;
     background: #000;
+    outline-color: transparent;
     color: #fff;
     border: 2px solid #af0000;
     margin: 2% 5%;
@@ -738,7 +740,6 @@ input[type="radio"]:checked + label:before {
 
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey; 
-    border-radius: ;
     background-color: #000;
 }
  
@@ -748,7 +749,7 @@ input[type="radio"]:checked + label:before {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(175, 0, 0); ahy
+    background: rgb(175, 0, 0);
 }
 
 ::selection {
@@ -1043,6 +1044,10 @@ input[type="radio"]:checked + label:before {
     }    
 
     /* TERCERA PAG */
+
+    .section-4__content--part-2 {
+        width: auto;
+    }
 
     /* QUARTA PAG */
 }
